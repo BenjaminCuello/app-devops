@@ -16,7 +16,8 @@ class TestPersonas(unittest.TestCase):
                 "nombre": "Benjamin",
                 "rut": "12345678-9",
                 "fechaNacimiento": "2001-10-15",
-                "ciudad": "Coquimbo"
+                "ciudad": "Coquimbo",
+                "gustos": ["leer", "viajar"]
             }
         )
 
@@ -29,7 +30,8 @@ class TestPersonas(unittest.TestCase):
                 "nombre": "Benjamin",
                 "rut": "12345678-9",
                 "fechaNacimiento": "2001-10-15",
-                "ciudad": "Coquimbo"
+                "ciudad": "Coquimbo",
+                "gustos": ["leer", "viajar"]
             }
         )
 
@@ -45,10 +47,11 @@ class TestPersonas(unittest.TestCase):
                 "nombre": "Benjamin",
                 "rut": "12345678-9",
                 "fechaNacimiento": "2001-10-15",
-                "ciudad": "Coquimbo"
+                "ciudad": "Coquimbo",
+                "gustos": ["leer", "viajar"]
             }
         )
-
+        
         respuesta = self.client.delete("/personas/1")
 
         self.assertEqual(respuesta.status_code, 200)
