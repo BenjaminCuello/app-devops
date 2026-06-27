@@ -17,7 +17,8 @@ def agregar_persona():
         "nombre": datos["nombre"],
         "rut": datos["rut"],
         "fechaNacimiento": datos["fechaNacimiento"],
-        "ciudad": datos["ciudad"]
+        "ciudad": datos["ciudad"],
+        "gustos": datos["gustos"]
     }
 
     personas.append(nueva_persona)
